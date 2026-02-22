@@ -1,25 +1,25 @@
 {
   "compilerOptions": {
+    /* Language and target */
     "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020"],
     "module": "ESNext",
-    "skipLibCheck": true,
+    "lib": ["ES2020"],
+
+    /* Module resolution */
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-
-    /* Bundler mode */
-    "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
 
-    /* Linting */
+    /* Type checking / linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
