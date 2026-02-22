@@ -5,7 +5,7 @@ import * as dogService from "../services/dogService"
 
 describe("DogRoutes - GET /api/dogs/random", () => {
 
-  // ✅ POSITIVE
+  // POSITIVE
   test("returns 200 and success true with image url", async () => {
 
     vi.spyOn(dogService, "getRandomDogImage")
@@ -23,7 +23,7 @@ describe("DogRoutes - GET /api/dogs/random", () => {
         .toBe("https://mocked-url.com/dog.jpg")
   })
 
-  // ❌ NEGATIVE
+  //  NEGATIVE
   test("returns 500 and error JSON", async () => {
 
     vi.spyOn(dogService, "getRandomDogImage")

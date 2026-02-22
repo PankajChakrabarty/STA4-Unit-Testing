@@ -7,7 +7,7 @@ describe("DogService - getRandomDogImage", () => {
     vi.restoreAllMocks()
   })
 
-  // ✅ POSITIVE TEST
+  //  POSITIVE TEST
   test("returns imageUrl and success when API call succeeds", async () => {
 
     const mockedApiResponse = {
@@ -31,7 +31,7 @@ describe("DogService - getRandomDogImage", () => {
     expect(fetchSpy).toHaveBeenCalledOnce()
   })
 
-  // ❌ NEGATIVE TEST
+  //  NEGATIVE TEST
   test("throws error when API response is not ok", async () => {
 
     const mockedResponse = {
